@@ -1,16 +1,17 @@
-package com.example.demo.dto.request;
+package com.example.demo.dto.response;
 
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 import java.time.LocalDate;
 @Builder
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Data
 @FieldDefaults(level = AccessLevel.PRIVATE)
-//data transfer object, dung de nhan data khi update user
-public class UserUpdateRequest {
+public class UserResponse {
+     String id;
+     String username;
      String password;
      String firstName;
      String laseName;
